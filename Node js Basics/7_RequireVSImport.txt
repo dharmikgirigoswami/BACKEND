@@ -1,0 +1,33 @@
+## `require` vs `import`
+
+| `require`                                | `import`                                        |
+| ---------------------------------------- | ----------------------------------------------- |
+| Uses the **CommonJS** module system.     | Uses the **ES Modules (ESM)** system.           |
+| Written as `require()`.                  | Written using the `import` keyword.             |
+| Can be used anywhere in the file.        | Must be written at the top level of the file.   |
+| Commonly used in older Node.js projects. | Used in modern JavaScript and Node.js projects. |
+
+### Example
+
+**Using `require`**
+
+```javascript
+const fs = require("fs");
+
+console.log("File System module loaded");
+```
+
+**Using `import`**
+
+```javascript
+import fs from "fs";
+
+console.log("File System module loaded");
+```
+
+### Key Points
+
+* `require` → CommonJS modules.
+* `import` → ES Modules (modern JavaScript).
+* `import` is the recommended approach for new projects.
+* To use `import` in Node.js, set `"type": "module"` in `package.json` or use the `.mjs` file extension.
