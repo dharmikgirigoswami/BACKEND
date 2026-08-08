@@ -1,0 +1,41 @@
+## `package.json`
+
+### Definition
+
+**`package.json`** is a configuration file in a Node.js project. It stores information about the project, such as its name, version, dependencies, scripts, and other settings.
+
+### Basic Example
+
+A simple `package.json` file:
+
+```json
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "My first Node.js project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0"
+  }
+}
+```
+
+### Key Points
+
+* Stores project information.
+* Keeps track of installed dependencies.
+* Defines scripts (e.g., `npm start`).
+* Created using:
+
+```bash
+npm init
+```
+
+or
+
+```bash
+npm init -y
+```

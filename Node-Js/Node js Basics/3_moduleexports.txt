@@ -1,0 +1,7 @@
+module.exports – Definition
+
+module.exports is a Node.js feature used to export functions, objects, or variables from one file so they can be used in another file.
+
+Modules in Files and Directories
+File Module: A single JavaScript file can export its functions, variables, or objects using module.exports.
+Directory Module: A folder can contain multiple files, and an index.js file is commonly used to export everything from the folder. Other files can then import the folder instead of importing each file separately.

@@ -1,0 +1,8 @@
+Process in Node.js – Definition
+
+A process is a running instance of a Node.js application. When you execute a Node.js program, the operating system creates a process to run it.
+
+process.argv – Definition
+
+process.argv is a Node.js property that stores the command-line arguments passed when running a Node.js program. It returns the arguments as an array of strings.
+

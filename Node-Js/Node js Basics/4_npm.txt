@@ -1,0 +1,44 @@
+    ## NPM (Node Package Manager)
+
+### Definition
+
+**NPM (Node Package Manager)** is the default package manager for Node.js. It is used to **install, update, remove, and manage packages (libraries or dependencies)** in a Node.js project.
+
+### Basic Example
+
+Initialize a new Node.js project:
+
+```bash
+npm init
+```
+
+Initialize with default settings:
+
+```bash
+npm init -y
+```
+
+Install a package:
+
+```bash
+npm install express
+```
+
+Install a package globally:
+
+```bash
+npm install -g nodemon
+```
+
+Uninstall a package:
+
+```bash
+npm uninstall express
+```
+
+### Key Points
+
+* Manages project dependencies.
+* Downloads packages from the NPM registry.
+* Creates a `package.json` file to store project information and dependencies.
+* Comes pre-installed with Node.js.

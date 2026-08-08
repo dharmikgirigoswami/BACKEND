@@ -1,0 +1,33 @@
+## Local vs Global Packages in NPM
+
+| Local Package                                  | Global Package                                         |
+| ---------------------------------------------- | ------------------------------------------------------ |
+| Installed only for a specific project.         | Installed once and available across the entire system. |
+| Stored in the project's `node_modules` folder. | Stored in the system's global npm directory.           |
+| Used as a dependency in the current project.   | Used as command-line tools from any location.          |
+| Installed using `npm install <package-name>`.  | Installed using `npm install -g <package-name>`.       |
+
+### Example
+
+**Local Installation**
+
+```bash
+npm install express
+```
+
+* Installs **Express** only for the current project.
+
+**Global Installation**
+
+```bash
+npm install -g nodemon
+```
+
+* Installs **Nodemon** globally, so it can be used from any project.
+
+### Key Points
+
+* **Local:** Project-specific dependencies.
+* **Global:** System-wide command-line tools.
+* Most libraries (e.g., Express) are installed **locally**.
+* Tools like **Nodemon** and **npm** are commonly installed **globally**.
