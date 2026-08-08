@@ -1,0 +1,129 @@
+# Express.js
+
+## Definition
+
+**Express.js** is a **fast, lightweight, and flexible web framework for Node.js** that helps developers build web applications and APIs easily. It provides useful features like routing, middleware, request handling, and response handling, reducing the amount of code you need to write.
+
+In simple words:
+
+> **Node.js** provides the runtime to execute JavaScript on the server, while **Express.js** makes it much easier to create servers, websites, and REST APIs.
+
+---
+
+## Why do we use Express.js?
+
+* Makes server creation simple.
+* Handles HTTP requests and responses easily.
+* Provides powerful routing.
+* Supports middleware for adding extra functionality.
+* Helps build REST APIs quickly.
+* Reduces repetitive code compared to using only Node.js.
+
+---
+
+## How Express.js works
+
+1. A client (browser or app) sends an HTTP request.
+2. Express receives the request.
+3. It checks the requested route (URL).
+4. The appropriate route handler processes the request.
+5. Express sends a response back to the client.
+
+---
+
+## Basic Syntax
+
+```javascript
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
+
+app.listen(3000);
+```
+
+---
+
+## Example
+
+```javascript
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+    res.send("Welcome to Express.js");
+});
+
+app.listen(3000, () => {
+    console.log("Server is running on port 3000");
+});
+```
+
+---
+
+## Output
+
+When you open:
+
+```
+http://localhost:3000/
+```
+
+The browser displays:
+
+```
+Welcome to Express.js
+```
+
+Terminal:
+
+```
+Server is running on port 3000
+```
+
+---
+
+## Advantages of Express.js
+
+* Lightweight and fast.
+* Easy to learn.
+* Simple routing system.
+* Supports middleware.
+* Ideal for building REST APIs.
+* Large community and ecosystem.
+* Works well with databases like MongoDB and MySQL.
+
+---
+
+## Common Mistakes
+
+* Forgetting to install Express using `npm install express`.
+* Forgetting to call `app.listen()`.
+* Using the wrong port number.
+* Forgetting to send a response with `res.send()` or a similar method.
+* Not restarting the server after making changes (unless using a tool like `nodemon`).
+
+---
+
+## Interview / Exam Points
+
+* Express.js is a **web framework** built on top of **Node.js**.
+* It simplifies server-side development.
+* It is used to create web applications and RESTful APIs.
+* It provides routing, middleware, and request/response handling.
+* It is open-source, lightweight, and flexible.
+
+---
+
+### Remember
+
+* **Node.js = Runtime Environment** (runs JavaScript on the server)
+* **Express.js = Framework** (makes building web servers and APIs much easier)
+
+**One-line definition for exams:**
+
+> **Express.js is a fast, lightweight, and flexible web framework for Node.js used to build web applications and REST APIs with features like routing, middleware, and request handling.**
